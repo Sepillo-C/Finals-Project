@@ -8,10 +8,13 @@ def cleaning():
     if asking.lower() == "yes":
         os.system('cls')
 
+print("====================")
+name = str(input("What is your name? "))
+print("====================")
 
 while True:
     print("Code Challenges - 1\nActivities - 2\nClose Program - 3")
-    choose = input("Which program would you like to use? ")
+    choose = input(f"Which program would you like to use {name}? ")
     if choose == "1":
         while True:
             print("\n===== Print Statements =====")
