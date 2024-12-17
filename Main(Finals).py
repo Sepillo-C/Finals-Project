@@ -77,6 +77,8 @@ while True:
             else:
                 print("Invalid Answer")
                 break
+    elif choose == "2":
+        print("===== Activities =====")
     elif choose == "3":
         print("Closing Program")
         break
