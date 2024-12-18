@@ -2,11 +2,9 @@ import os
 from Functions import CodeChallenges
 from Functions import Activities
 
-#A function for 'cls'
 def clearhistory():     
-    ask = str(input("\nDo you want to clear your history (yes/no)? "))
-    if ask.lower() == "yes":
-        os.system('cls')
+    ask = str(input("\nCleaning your history..."))
+
 
 
 
@@ -31,6 +29,7 @@ while True:
                 print("\t9 - Sum until Zero \n\t10 - Triangles")
                 print("\n\t========= Basic Programs =========")
                 print("\t11 - Biodata \n\t12 - Calculator \n\t13 - Temperature \n\t14 - Grade \n\t15 - Grocery \n\t16 - Bank")
+                print("\n\t=======================")
                 print("\t17 - Return to Main Menu")
                 
                 ask = input("\nHello! What 'Code Challenge' program would you like to run? ")
@@ -95,6 +94,7 @@ while True:
                 print("\t========= Activities =========")
                 for i in range(1, 20):
                     print(f"\t{i} - Activity({i})")
+                    print("\n\t========= Basic Programs =========")
                 print("\t20 - Exit to Main Menu")
 
                 ask = input(f"\nWhich 'Activity' would you like to run, {name.title()}? ")

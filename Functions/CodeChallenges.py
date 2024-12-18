@@ -292,6 +292,8 @@ def triangles():
                     
                 print( )
             continue
+        elif ask.lower() == "no":
+            break
         else:
             os.system('cls')
             print("Invalid answer, please answer yes or no only.")
