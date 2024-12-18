@@ -1,12 +1,11 @@
 import os
-
 from Functions import CodeChallenges
 from Functions import Activities
 
-def execute_and_clear(func):
-
-    func()
-    os.system('cls')
+def clearhistory():
+    ask = str(input("\nDo you want to clear your history (yes/no)? "))
+    if ask.lower() == "yes":
+        os.system('cls')
 
 name = str(input("What is your name? "))
 
@@ -33,37 +32,53 @@ while True:
             ask = input("\nHello! What 'Code Challenge' program would you like to run? ")
             
             if ask == "1":
-                execute_and_clear(CodeChallenges.Diamond)
+                CodeChallenges.Diamond()
+                clearhistory()
             elif ask == "2":
-                execute_and_clear(CodeChallenges.Diamond_name)
+                CodeChallenges.Diamond_name()
+                clearhistory()
             elif ask == "3":
-                execute_and_clear(CodeChallenges.SumOfTen)
+                CodeChallenges.SumOfTen()
+                clearhistory()
             elif ask == "4":
-                execute_and_clear(CodeChallenges.InvertedTriangel)
+                CodeChallenges.InvertedTriangel()
+                clearhistory()
             elif ask == "5":
-                execute_and_clear(CodeChallenges.DiamondEven)
+                CodeChallenges.DiamondEven()
+                clearhistory()
             elif ask == "6":
-                execute_and_clear(CodeChallenges.DiamondOdd)
+                CodeChallenges.DiamondOdd()
+                clearhistory()
             elif ask == "7":
-                execute_and_clear(CodeChallenges.LoopArrow)
+                CodeChallenges.LoopArrow()
+                clearhistory()
             elif ask == "8":
-                execute_and_clear(CodeChallenges.DiamondNum)
+                CodeChallenges.DiamondNum()
+                clearhistory()
             elif ask == "9":
-                execute_and_clear(CodeChallenges.sumuntilzero)
+                CodeChallenges.sumuntilzero()
+                clearhistory()
             elif ask == "10":
-                execute_and_clear(CodeChallenges.triangles)
+                CodeChallenges.triangles()
+                clearhistory()
             elif ask == "11":
-                execute_and_clear(CodeChallenges.biodata)
+                CodeChallenges.biodata()
+                clearhistory()
             elif ask == "12":
-                execute_and_clear(CodeChallenges.calculator)
+                CodeChallenges.calculator()
+                clearhistory()
             elif ask == "13":
-                execute_and_clear(CodeChallenges.temperature)
+                CodeChallenges.temperature()
+                clearhistory()
             elif ask == "14":
-                execute_and_clear(CodeChallenges.grade)
+                CodeChallenges.grade()
+                clearhistory()
             elif ask == "15":
-                execute_and_clear(CodeChallenges.grocery)
+                CodeChallenges.grocery()
+                clearhistory()
             elif ask == "16":
-                execute_and_clear(CodeChallenges.bank)
+                CodeChallenges.bank()
+                clearhistory()
             elif ask == "17":
                 print("Returning to Main Menu...")
                 break
@@ -81,43 +96,62 @@ while True:
             ask = input(f"\nWhich 'Activity' would you like to run, {name.title()}? ")
 
             if ask == "1":
-                execute_and_clear(Activities.Activity1)
+                Activities.Activity1()
+                clearhistory()
             elif ask == "2":
-                execute_and_clear(Activities.Activity2)
+                Activities.Activity2()
+                clearhistory()
             elif ask == "3":
-                execute_and_clear(Activities.Activity3)
+                Activities.Activity3()
+                clearhistory()
             elif ask == "4":
-                execute_and_clear(Activities.Activity4)
+                Activities.Activity4()
+                clearhistory()
             elif ask == "5":
-                execute_and_clear(Activities.Activity5)
+                Activities.Activity5()
+                clearhistory()
             elif ask == "6":
-                execute_and_clear(Activities.Activity6)
+                Activities.Activity6()
+                clearhistory()
             elif ask == "7":
-                execute_and_clear(Activities.Activity7)
+                Activities.Activity7()
+                clearhistory()
             elif ask == "8":
-                execute_and_clear(Activities.Activity8)
+                Activities.Activity8()
+                clearhistory()
             elif ask == "9":
-                execute_and_clear(Activities.Activity9)
+                Activities.Activity9()
+                clearhistory()
             elif ask == "10":
-                execute_and_clear(Activities.Activity10)
+                Activities.Activity10()
+                clearhistory()
             elif ask == "11":
-                execute_and_clear(Activities.Activity11)
+                Activities.Activity11()
+                clearhistory()
             elif ask == "12":
-                execute_and_clear(Activities.Activity12)
+                Activities.Activity12()
+                clearhistory()
             elif ask == "13":
-                execute_and_clear(Activities.Activity13)
+                Activities.Activity13()
+                clearhistory()
             elif ask == "14":
-                execute_and_clear(Activities.Activity14)
+                Activities.Activity14()
+                clearhistory()
             elif ask == "15":
-                execute_and_clear(Activities.Activity15)
+                Activities.Activity15()
+                clearhistory()
             elif ask == "16":
-                execute_and_clear(Activities.Activity16)
+                Activities.Activity16()
+                clearhistory()
             elif ask == "17":
-                execute_and_clear(Activities.Activity17)
+                Activities.Activity17()
+                clearhistory()
             elif ask == "18":
-                execute_and_clear(Activities.Activity18)
+                Activities.Activity18()
+                clearhistory()
             elif ask == "19":
-                execute_and_clear(Activities.Activity19)
+                Activities.Activity19()
+                clearhistory()
             elif ask == "20":
                 print("Returning to Main Menu...")
                 break
@@ -125,7 +159,8 @@ while True:
                 print("Invalid choice. Please select a valid activity.")
 
     elif choose == "3":
-        print("Closing Program")
+        os.system('cls')
+        print("Closing Program...")
         break
     else:
         print("Invalid Answer. Please choose between 1, 2, or 3.")
