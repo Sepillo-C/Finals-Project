@@ -5,9 +5,6 @@ from Functions import Activities
 def clearhistory():     
     ask = str(input("\nCleaning your history..."))
 
-
-
-
 while True:
     print("\t========= Username =========")
     name = str(input("What is your name? "))
@@ -16,7 +13,7 @@ while True:
         print("\t========= Menu =========")
         print("\t1 - Code Challenges \n\t2 - Activities \n\t3 - Close The Menu")
         print("\t========= Menu =========")
-        choose = input(f"Which 'Code Challenge' would you like to run, {name.title()}? ")
+        choose = input(f"Which 'Programs' would you like to see, {name.title()}? ")
 
         if choose == "1":
             while True:
