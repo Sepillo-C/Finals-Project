@@ -1,33 +1,33 @@
-def BasicFunction():
+def Activity1():
     a = 5 + 5
     b = 2 - 1
 
-    print(f"5 + 5 is {a} \n 2 - 1 is {b}")
+    print(f"5 + 5 is {a} \n2 - 1 is {b}")
 
-def SimpleInputs():
+def Activity2():
     name = input("What is your name? ")
     age = input("How old are you? ")
     city = input("Where do you live? ")
 
     print("\nHello,", name, "!")
-    print("You are", age, "years old and live in", city + ".")  
+    print("You are", age, "years old and live in", city + ".")
 
-def Addition():
+def Activity3():
     number1 = eval(input("Enter a number: "))
     number2 = eval(input("Enter a number: "))
     print(f"The sum of {number1} + {number2} is {number1 + number2}")
 
-def AssingOpp():
+def Activity4():
     a = 1
     print(a)
 
     a += 2
     print(a)
 
-    a -=1
+    a -= 1
     print(a)
 
-def AssingVar():
+def Activity5():
     x = 5
     print(f"{x}")
 
@@ -37,18 +37,18 @@ def AssingVar():
     x += 15
     print(f"{x}")
 
-def Diamond():
+def Activity6():
     diamond = 0
     miner = input("What is your name: ")
     isDiamond = input("Is your mineral Diamond: ")
 
     if isDiamond.lower() == "yes":
-        Diamond += 1
+        diamond += 1
         print(f"Hello {miner}, your Diamond is {diamond}")
     else:
         print(f"Hello {miner}, your Diamond is {diamond}")
 
-def Password():
+def Activity7():
     password = str(input("Enter your password: "))
 
     if password.lower() == "secret":
@@ -59,9 +59,9 @@ def Password():
         print("Access Granted")
     else:
         print("Wrong Password, Access Denied")
-        print("Thank your for using the program.")
+        print("Thank you for using the program.")
 
-def Age():   
+def Activity8():   
     age = int(input("Enter your age: "))
 
     if 1 <= age <= 7:
@@ -81,28 +81,28 @@ def Age():
     else:
         print("Invalid age")
 
-def StudentLevel():
+def Activity9():
     name = input("Enter your name: ")
     Student = input("Are you a current student of DLL (yes / no): ")
 
     if Student.lower() == "yes":
-        yearLevel = input("What year are you currently enrolled on? \nF - Freshmen\nS - Sophomore\nJ - Junior\nSN - Senior\n")
+        yearLevel = input("What year are you currently enrolled in? \nF - Freshman\nS - Sophomore\nJ - Junior\nSN - Senior\n")
         if yearLevel.lower() == "f":
-            print(f"Hi {name}, You are a Freshmen in DLL")
+            print(f"Hi {name}, You are a Freshman in DLL")
         elif yearLevel.lower() == "s":
             print(f"Hi {name}, You are a Sophomore in DLL")
         elif yearLevel.lower() == "j":
             print(f"Hi {name}, You are a Junior in DLL")
-        elif yearLevel.lower() == "SN":
-            print(f"Hi {name}, You are a Freshmen in DLL")
+        elif yearLevel.lower() == "sn":
+            print(f"Hi {name}, You are a Senior in DLL")
     else:
-        print("Thank your for using the system.")
+        print("Thank you for using the system.")
 
-def CountingFive():
-    for x in range(1,6):
+def Activity10():
+    for x in range(1, 6):
         print(x)
 
-def TwoSFourS():
+def Activity11():
     for x in range(10, 1, -1):
         print(x)
 
@@ -111,7 +111,7 @@ def TwoSFourS():
     for x in range(10, 2, -2):
         print(x)
 
-def Factorial():
+def Activity12():
     fac = 1
     num = int(input("Enter a number: "))
 
@@ -120,21 +120,21 @@ def Factorial():
 
     print(f"The factorial of {num} is {fac}")
 
-def AsterisksAndNumbers():
+def Activity13():
     for x in range(0, 7):
         print(x, end=" ")   
         for y in range(0, 7):
             print("*", end=" ")
-    print() 
+        print()
 
-def Triangle():
-    for x in range(0,11):
-        print("", x, end = "")
+def Activity14():
+    for x in range(0, 11):
+        print("", x, end="")
         for y in range(0, x):
-            print("*", end = "")
-        print("\n")    
+            print("*", end="")
+        print("\n")
 
-def ReverseTri():
+def Activity15():
     lines = 5 
     inv = 0
     for x in range(lines, 0, -1):
@@ -142,15 +142,15 @@ def ReverseTri():
         print("* " * x)
         inv += 2
 
-def MultiTable():
-    ask = int(input("Enter mumber of columns: "))
+def Activity16():
+    ask = int(input("Enter number of columns: "))
     for lines in range(1, ask + 1):
         print(f" {lines}", end="")
         for product in range(2, ask + 1):
-            print(f"\t{product * lines}",end="")
+            print(f"\t{product * lines}", end="")
         print()
 
-def Triangle():
+def Activity17():
     ask = int(input("Enter number of triangles: "))
 
     for x in range(1, 6):
@@ -158,27 +158,22 @@ def Triangle():
             print("* " * x, end="  " * (6 - x))
         print()
 
-def SevenNames():
-    print(" Enter 7 names, type 'stop' to terminate names")
+def Activity18():
+    print("Enter 7 names, type 'stop' to terminate names")
 
-    for x in range(0,5):
-        ask = input(" Enter your name: ")
-        if ask.lower()== "stop":
-            print(" Program terminated.")
+    for x in range(0, 5):
+        ask = input("Enter your name: ")
+        if ask.lower() == "stop":
+            print("Program terminated.")
             break
         else:
-            print(f" Hello {ask}")
+            print(f"Hello {ask}")
 
-def UnliNames():
-    print("Keep asking for name until user types 'stop'. Type 'stop' to terminate the program.")
+def Activity19():
+    print("Keep asking for names until the user types 'stop'. Type 'stop' to terminate the program.")
 
     while True:
         name = input("Enter name: ")
         if name.lower() == "stop":
             break
         print(name)
-
-#Do Activity 22 Tomorrow
-
-
-    
